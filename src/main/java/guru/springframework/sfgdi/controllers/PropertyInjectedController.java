@@ -10,7 +10,7 @@ public class PropertyInjectedController {
     @Qualifier("propertyInjectedGreetingService")
     @Autowired
     public GreetingService greetingService;
-    public String getGreeting(){
+    public String sayHello(){
         return greetingService.sayGreeting();
     }
 }
